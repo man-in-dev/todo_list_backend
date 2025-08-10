@@ -13,6 +13,7 @@ connectDB();
 
 app.use(cors({
     origin: 'https://todo-list-frontend-theta-pearl.vercel.app',
+    credentials: true
 }));
 app.use(express.json());
 
