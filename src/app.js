@@ -11,10 +11,7 @@ import connectDB from "./config/db.js";
 
 connectDB();
 
-app.use(cors({
-    origin: 'https://todo-list-frontend-theta-pearl.vercel.app',
-    credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 // create a todo - service 1
