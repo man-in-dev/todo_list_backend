@@ -14,6 +14,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json("Server is running fine...")
+})
+
 // create a todo - service 1
 app.post("/create-todo", async function (req, res) {
     try {
