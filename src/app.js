@@ -12,7 +12,7 @@ import connectDB from "./config/db.js";
 connectDB();
 
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: 'https://todo-list-frontend-theta-pearl.vercel.app',
 }));
 app.use(express.json());
 
